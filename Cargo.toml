@@ -1,0 +1,18 @@
+[package]
+name = "os-detect-aosc"
+version = "0.1.0"
+authors = ["Jeremy Soller <jackpot51@gmail.com>", "Michael Aaron Murphy <mmstickman@gmail.com>"]
+description = "Detect an OS installed on a partition (fork from pop-os/distinst)"
+repository = "https://github.com/aosc-dev/os-detect"
+readme = "README.md"
+license = "MIT"
+categories = ["filesystem", "os"]
+keywords = ["detect", "probe", "os"]
+edition = "2024"
+
+[dependencies]
+os-release = "0.1.0"
+partition-identity = "0.3.0"
+sys-mount = "3"
+log = "0.4.6"
+tempfile = "3"

@@ -41,10 +41,7 @@ impl OS {
     pub fn name(&self) -> &str {
         match self {
             OS::Windows(name) => name,
-            OS::Linux {
-                info,
-                ..
-            } => &info.pretty_name,
+            OS::Linux { info, .. } => &info.pretty_name,
             OS::MacOs(name) => name,
         }
     }

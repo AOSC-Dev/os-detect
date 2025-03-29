@@ -37,6 +37,19 @@ pub enum OS {
     MacOs(String),
 }
 
+impl OS {
+    pub fn name(&self) -> &str {
+        match self {
+            OS::Windows(name) => name,
+            OS::Linux {
+                info,
+                ..
+            } => &info.pretty_name,
+            OS::MacOs(name) => name,
+        }
+    }
+}
+
 /// Mounts the partition to a temporary directory and checks for the existence of an
 /// installed operating system.
 ///

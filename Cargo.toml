@@ -1,6 +1,6 @@
 [package]
 name = "os-detect-aosc"
-version = "0.1.0"
+version = "0.2.0"
 authors = ["Jeremy Soller <jackpot51@gmail.com>", "Michael Aaron Murphy <mmstickman@gmail.com>"]
 description = "Detect an OS installed on a partition (fork from pop-os/distinst)"
 repository = "https://github.com/aosc-dev/os-detect"
